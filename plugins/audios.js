@@ -3,7 +3,7 @@ handler.all = async function (m) {
 let chat = global.db.data.chats[m.chat]
 
 if (/^hola|Holis|olaHola|holis$/i.test(m.text) && chat.audios && !chat.isBanned) {
-let vn = './views/Hola.mp3'
+let vn = 'Hola,Soy un bot llamado had que te ayudara a la creación de stickers recuerda que para hacer los stickers necesitas poner un foto con el comando ".s "  espero lo disfrutes si tienes alguna duda escribir Dudas en el chat gracias🤖'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}   
 
